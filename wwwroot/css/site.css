@@ -1,0 +1,113 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+/*  margin-bottom: 60px;*/
+}
+
+/*Customized CSS*/
+
+body {
+    background-color: #aed5e6;
+}
+
+main {
+    max-width: 500px;
+    min-height: 550px;
+    margin: 40px auto;
+    background-color: #598e96;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    position: relative !important;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form-control, .form-control:focus, .form-control:active {
+    background-color: #f2d5ce;
+    box-shadow: none;
+}
+
+.form-group-input-box {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.form-group-btn-submit {
+    width: 30%;
+}
+
+.form-create input, .form-create input:hover, .form-create input:focus .form-create input:active {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2d5ce;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.form-create .btn-submit {
+    background-color: #f2d5ce;
+    color: black;
+    box-shadow: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-create .btn-submit:active {
+    box-shadow: none;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.table tr {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #f2d5ce;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 5%;
+    background: transparent;
+    border: none;
+}

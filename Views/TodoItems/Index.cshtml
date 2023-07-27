@@ -1,0 +1,26 @@
+@model AlfieTodoList.Models.TodoItem
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Todo List</h1>
+
+<form class="form-create" method="post" data-ajax="true" data-ajax-method="POST" ,
+        data-ajax-url="/TodoItems/AjaxCreate" data-ajax-update=".tableDiv" data-ajax-mode="replace"
+        data-ajax-success="onSuccess">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group form-group-input-box">
+        @Html.AntiForgeryToken()
+        <input asp-for="Name" class="form-control input-box" maxlength="45" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group form-group-btn-submit">
+        <input type="submit" value="Add" class="btn btn-primary btn-submit" />
+    </div>
+</form>
+
+<div class="tableDiv"></div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/Custom_Scripts/BuildTable.js"></script>
